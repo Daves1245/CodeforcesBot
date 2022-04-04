@@ -1,0 +1,31 @@
+{
+  "name": "bottemplate",
+  "version": "0.1.0",
+  "description": "This is a template for a discord.js bot.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node ./src/commands/deploy.js",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheIceCreamBear/BotTemplate.git"
+  },
+  "author": "Joseph Terribile",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/TheIceCreamBear/BotTemplate/issues"
+  },
+  "homepage": "https://github.com/TheIceCreamBear/BotTemplate#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
