@@ -37,7 +37,7 @@ for (const file of commandFiles) {
                 .catch(() => console.error);
 
             console.log('Setting up new commands.');
-            rest.put(Routes.applicationCommands(process.env.DISCORD_CLIENT_ID), { body: commands })
+            rest.put(Routes.applicationGuildCommands(process.env.DISCORD_CLIENT_ID, process.env.DISCORD_GUILD_ID), { body: commands })
                 .then(() => console.log('Successfully registered application commands.'))
                 .catch(console.error);
         }
